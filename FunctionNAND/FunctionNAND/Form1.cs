@@ -32,14 +32,14 @@ namespace FunctionNAND
 
             while (con == 1)
             {
-                var zin = (x1 * w1) + (x2 * w2);
+                var zin = (x1[1] * w1) + (x2[1] * w2);
 
                 for (int i = 1; i < 4; i++)
                 {
-                    if (zin(i) >= theta)                    
-                        y(i) = 1;
+                    if (zin >= theta)                    
+                        y[i] = 1;
                     else
-                        y(i) = 0;
+                        y[i] = 0;
                 }
 
                 //Saída da Rede
